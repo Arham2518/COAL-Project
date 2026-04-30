@@ -1,0 +1,12 @@
+﻿Snake Game Package (Working Files Only)
+
+Included files:
+1. snake.asm  - Source code (verified working)
+2. snake.exe  - Compiled executable (verified working)
+
+Excluded intentionally:
+- snake.err, snake.temp.*, and other temporary/error artifacts
+
+Build command (if needed):
+c:\Users\user\.vscode\extensions\istareatscreens.masm-runner-0.9.1\native\JWASM\JWASM.EXE /Zd /coff /I"c:\Users\user\.vscode\extensions\istareatscreens.masm-runner-0.9.1\native\irvine" "snake.asm"
+c:\Users\user\.vscode\extensions\istareatscreens.masm-runner-0.9.1\native\JWLINK\JWlink.exe format windows pe LIBPATH "c:\Users\user\.vscode\extensions\istareatscreens.masm-runner-0.9.1\native\irvine" LIBRARY "c:\Users\user\.vscode\extensions\istareatscreens.masm-runner-0.9.1\native\irvine\Irvine32.lib" LIBRARY "c:\Users\user\.vscode\extensions\istareatscreens.masm-runner-0.9.1\native\irvine\Kernel32.lib" LIBRARY "c:\Users\user\.vscode\extensions\istareatscreens.masm-runner-0.9.1\native\irvine\User32.lib" file "snake.obj"
